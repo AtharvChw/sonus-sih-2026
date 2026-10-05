@@ -1,0 +1,26 @@
+{
+  "preset": "PF03 light presence, owner-accepted 2026-10-05",
+  "processor_sha256": "a0544cd3c9865b7e44862f9849d4e57ce73a1f5edbf8e555ca5370b7c0058025",
+  "bundle_sha256": "3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb",
+  "model_post_filter_beta": 0.03,
+  "standard_processing": true,
+  "full_model_processing": false,
+  "output_gain_db": 9.138518975440501,
+  "gain_offset_db": -4.5,
+  "natural_gain_db": 10.638518975440501,
+  "extra_live_gain_db": 3.0,
+  "output_eq": [
+    {"type": "highpass", "frequency_hz": 95, "order": 2},
+    {"type": "peak", "frequency_hz": 350, "q": 0.8, "gain_db": -1.0},
+    {"type": "peak", "frequency_hz": 2700, "q": 1.0, "gain_db": 0.7},
+    {"type": "peak", "frequency_hz": 4200, "q": 0.7, "gain_db": 3.0},
+    {"type": "peak", "frequency_hz": 2500, "q": 1.1, "gain_db": 0.8}
+  ],
+  "peak_guard": {"threshold": 0.72, "asymptotic_peak": 0.95},
+  "microphone": {"alsa_control": "Mic", "alsa_value": 5, "agc": "off"},
+  "last_known_devices": {"input_device": 1, "output_device": 0, "note": "USB mic / wired headphones; recheck device numbers if USB topology changes"},
+  "audio_format": {"sample_rate_hz": 48000, "channels": 1, "hop_samples": 480, "hop_ms": 10},
+  "initial_output_jitter_buffer_ms": 60,
+  "requested_device_latency_ms": 80,
+  "scope": "One 30-second owner-accepted live run (pf03_clarity_20261005_200409). Not a sustained, field, or final-evaluation certification."
+}

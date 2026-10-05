@@ -1,0 +1,84 @@
+    Blocking waiting for file lock on build directory
+   Compiling crunchy v0.2.4
+   Compiling tiny-keccak v2.0.2
+   Compiling const-random-macro v0.1.16
+   Compiling const-random v0.1.18
+   Compiling dlv-list v0.5.2
+   Compiling ordered-multimap v0.6.0
+   Compiling rust-ini v0.19.0
+   Compiling deep_filter v0.5.6 (project/.upstream-deepfilternet-v0.5.6/libDF)
+warning: unexpected `cfg` condition name: `cargo_c`
+  --> project/.upstream-deepfilternet-v0.5.6/libDF/src/lib.rs:29:11
+   |
+29 | #[cfg(any(cargo_c, feature = "capi"))]
+   |           ^^^^^^^
+   |
+   = help: expected names are: `docsrs`, `feature`, and `test` and 32 more
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(cargo_c)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(cargo_c)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+   --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:692:27
+    |
+692 |     pub fn get_spec_noisy(&self) -> ArrayView2<Complex32> {
+    |                           ^^^^^     ^^^^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+    |                           |
+    |                           the lifetime is elided here
+    |
+    = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+    = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+    |
+692 |     pub fn get_spec_noisy(&self) -> ArrayView2<'_, Complex32> {
+    |                                                +++
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+   --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:704:25
+    |
+704 |     pub fn get_spec_enh(&self) -> ArrayView2<Complex32> {
+    |                         ^^^^^     ^^^^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+    |                         |
+    |                         the lifetime is elided here
+    |
+    = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+help: use `'_` for type paths
+    |
+704 |     pub fn get_spec_enh(&self) -> ArrayView2<'_, Complex32> {
+    |                                              +++
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+   --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:712:29
+    |
+712 |     pub fn get_mut_spec_enh(&mut self) -> ArrayViewMut2<Complex32> {
+    |                             ^^^^^^^^^     ^^^^^^^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+    |                             |
+    |                             the lifetime is elided here
+    |
+    = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+help: use `'_` for type paths
+    |
+712 |     pub fn get_mut_spec_enh(&mut self) -> ArrayViewMut2<'_, Complex32> {
+    |                                                         +++
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+    --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:1076:36
+     |
+1076 | pub fn tvalue_to_array_view_mut(x: &mut TValue) -> ArrayViewMutD<f32> {
+     |                                    ^^^^^^^^^^^     ^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+     |                                    |
+     |                                    the lifetime is elided here
+     |
+     = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+help: use `'_` for type paths
+     |
+1076 | pub fn tvalue_to_array_view_mut(x: &mut TValue) -> ArrayViewMutD<'_, f32> {
+     |                                                                  +++
+
+warning: `deep_filter` (lib) generated 5 warnings (run `cargo fix --lib -p deep_filter` to apply 4 suggestions)
+   Compiling dfn_stream_probe v0.1.0 (project/streaming)
+    Finished `release` profile [optimized] target(s) in 10m 16s

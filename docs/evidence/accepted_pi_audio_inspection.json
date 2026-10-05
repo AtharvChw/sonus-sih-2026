@@ -1,0 +1,18 @@
+{
+  "noisy_mic_48k.wav": {
+    "sample_rate": 48000,
+    "channels": 1,
+    "duration_seconds": 30.09,
+    "peak": 0.934600830078125,
+    "rms_dbfs": -24.29273873074774,
+    "near_full_scale_samples": 0
+  },
+  "played_output_48k.wav": {
+    "sample_rate": 48000,
+    "channels": 1,
+    "duration_seconds": 30.09,
+    "peak": 0.949981689453125,
+    "rms_dbfs": -21.624013912139613,
+    "near_full_scale_samples": 0
+  }
+}

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+# Rust
+target/
+Cargo.lock.bak
+# Audio / datasets (never commit private recordings or raw data)
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.hdf5
+*.ckpt
+*.pt
+*.bin
+datasets/
+raw/
+# Model + build artifacts (reproduce via training/ + cargo; do not commit)
+*.onnx
+*.tar.gz
+stream_raw
+parity_output/
+pf03_clarity_*/
+candidate_live_*/
+reports/
+# Secrets / env
+.env
+*.pem
+*.key
+kaggle.json
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

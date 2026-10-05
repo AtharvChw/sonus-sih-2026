@@ -1,0 +1,126 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling serde v1.0.229
+   Compiling syn v1.0.109
+   Compiling paste v1.0.15
+   Compiling rustix v1.1.5
+   Compiling syn v2.0.119
+   Compiling syn v3.0.6
+   Compiling zerocopy-derive v0.8.59
+   Compiling serde_derive v1.0.229
+   Compiling zerocopy v0.8.59
+   Compiling pest_generator v2.9.2
+   Compiling pest_derive v2.9.2
+   Compiling kstring v2.0.5
+   Compiling liquid-derive v0.26.10
+   Compiling liquid-core v0.26.11
+   Compiling liquid-lib v0.26.11
+   Compiling liquid v0.26.11
+   Compiling half v2.7.1
+   Compiling enum-ordinalize v3.1.15
+   Compiling tract-linalg v0.19.16
+   Compiling educe v0.4.23
+   Compiling tract-data v0.19.16
+   Compiling derive-new v0.5.9
+   Compiling xattr v1.6.1
+   Compiling tar v0.4.46
+   Compiling ppv-lite86 v0.2.21
+   Compiling anyhow v1.0.104
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.8
+   Compiling prost-derive v0.11.9
+   Compiling rand_distr v0.4.3
+   Compiling prost v0.11.9
+   Compiling thiserror-impl v1.0.69
+   Compiling clap_derive v4.6.7
+   Compiling serde_json v1.0.151
+   Compiling thiserror v1.0.69
+   Compiling clap v4.6.7
+   Compiling tract-core v0.19.16
+   Compiling tract-nnef v0.19.16
+   Compiling tract-onnx-opl v0.19.16
+   Compiling tract-pulse-opl v0.19.16
+   Compiling tract-hir v0.19.16
+   Compiling tract-onnx v0.19.16
+   Compiling tract-pulse v0.19.16
+   Compiling deep_filter v0.5.6 (project/.upstream-deepfilternet-v0.5.6/libDF)
+warning: unexpected `cfg` condition name: `cargo_c`
+  --> project/.upstream-deepfilternet-v0.5.6/libDF/src/lib.rs:29:11
+   |
+29 | #[cfg(any(cargo_c, feature = "capi"))]
+   |           ^^^^^^^
+   |
+   = help: expected names are: `docsrs`, `feature`, and `test` and 32 more
+   = help: consider using a Cargo feature instead
+   = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+            [lints.rust]
+            unexpected_cfgs = { level = "warn", check-cfg = ['cfg(cargo_c)'] }
+   = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(cargo_c)");` to the top of the `build.rs`
+   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+   = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+   --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:692:27
+    |
+692 |     pub fn get_spec_noisy(&self) -> ArrayView2<Complex32> {
+    |                           ^^^^^     ^^^^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+    |                           |
+    |                           the lifetime is elided here
+    |
+    = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+    = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+    |
+692 |     pub fn get_spec_noisy(&self) -> ArrayView2<'_, Complex32> {
+    |                                                +++
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+   --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:704:25
+    |
+704 |     pub fn get_spec_enh(&self) -> ArrayView2<Complex32> {
+    |                         ^^^^^     ^^^^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+    |                         |
+    |                         the lifetime is elided here
+    |
+    = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+help: use `'_` for type paths
+    |
+704 |     pub fn get_spec_enh(&self) -> ArrayView2<'_, Complex32> {
+    |                                              +++
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+   --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:712:29
+    |
+712 |     pub fn get_mut_spec_enh(&mut self) -> ArrayViewMut2<Complex32> {
+    |                             ^^^^^^^^^     ^^^^^^^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+    |                             |
+    |                             the lifetime is elided here
+    |
+    = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+help: use `'_` for type paths
+    |
+712 |     pub fn get_mut_spec_enh(&mut self) -> ArrayViewMut2<'_, Complex32> {
+    |                                                         +++
+
+warning: hiding a lifetime that's elided elsewhere is confusing
+    --> project/.upstream-deepfilternet-v0.5.6/libDF/src/tract.rs:1076:36
+     |
+1076 | pub fn tvalue_to_array_view_mut(x: &mut TValue) -> ArrayViewMutD<f32> {
+     |                                    ^^^^^^^^^^^     ^^^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+     |                                    |
+     |                                    the lifetime is elided here
+     |
+     = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+help: use `'_` for type paths
+     |
+1076 | pub fn tvalue_to_array_view_mut(x: &mut TValue) -> ArrayViewMutD<'_, f32> {
+     |                                                                  +++
+
+warning: `deep_filter` (lib) generated 5 warnings (run `cargo fix --lib -p deep_filter` to apply 4 suggestions)
+   Compiling dfn_stream_probe v0.1.0 (project/streaming)
+warning: linker stderr: ignoring deprecated linker optimization setting '1'
+  |
+  = note: `#[warn(linker_messages)]` on by default
+
+warning: `dfn_stream_probe` (bin "stream_raw") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 13m 40s

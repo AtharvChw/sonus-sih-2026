@@ -1,0 +1,114 @@
+{
+  "workflow": "file-fed native Rust; not live or acoustic latency",
+  "bundle_sha256": "3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb",
+  "processor_sha256": "8d01b4b22ec75af4f0d9ad4b73d77b5d2404bf9fad2e3ad8e629d4ce27565937",
+  "reference_scope": "ten saved validation cases, two rain recordings; not full defence coverage",
+  "runtime": "parity mode; full processing; no postfilter/EQ/gain",
+  "gate": {
+    "relative_rms_difference_max": 0.01,
+    "max_absolute_difference_max": 0.01
+  },
+  "passed": true,
+  "cases": [
+    {
+      "id": 0,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 4.861413178215375e-05,
+      "relative_rms_difference": 0.0007158737216085572,
+      "max_absolute_difference": 0.0019702650606632233,
+      "correlation": 0.9999997441352301,
+      "passed": true
+    },
+    {
+      "id": 1,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 4.548873410460677e-05,
+      "relative_rms_difference": 0.0006192776257943866,
+      "max_absolute_difference": 0.0015338859520852566,
+      "correlation": 0.9999998085782162,
+      "passed": true
+    },
+    {
+      "id": 2,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 1.0039271231294175e-05,
+      "relative_rms_difference": 0.00013198003209696435,
+      "max_absolute_difference": 0.0006773588247597218,
+      "correlation": 0.9999999913016228,
+      "passed": true
+    },
+    {
+      "id": 3,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 6.466598967475207e-06,
+      "relative_rms_difference": 8.376653796347822e-05,
+      "max_absolute_difference": 0.0007668836042284966,
+      "correlation": 0.9999999964942354,
+      "passed": true
+    },
+    {
+      "id": 4,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 1.0332867786144121e-05,
+      "relative_rms_difference": 0.000132913043834613,
+      "max_absolute_difference": 0.0006596185266971588,
+      "correlation": 0.9999999911827184,
+      "passed": true
+    },
+    {
+      "id": 5,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 5.9692787245523376e-06,
+      "relative_rms_difference": 8.799925247050332e-05,
+      "max_absolute_difference": 0.0005327907856553793,
+      "correlation": 0.9999999961344173,
+      "passed": true
+    },
+    {
+      "id": 6,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 6.50445442162008e-06,
+      "relative_rms_difference": 8.870322005047533e-05,
+      "max_absolute_difference": 0.0005301670171320438,
+      "correlation": 0.9999999960728865,
+      "passed": true
+    },
+    {
+      "id": 7,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 9.78995741269185e-06,
+      "relative_rms_difference": 0.00012985584182240834,
+      "max_absolute_difference": 0.0006348765455186367,
+      "correlation": 0.9999999915853024,
+      "passed": true
+    },
+    {
+      "id": 8,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 2.6645972029388207e-05,
+      "relative_rms_difference": 0.0003459787084091516,
+      "max_absolute_difference": 0.0010953079909086227,
+      "correlation": 0.9999999402722555,
+      "passed": true
+    },
+    {
+      "id": 9,
+      "samples": 187320,
+      "ready": "ready sample_rate=48000 hop_samples=480 model_delay_samples=1440 model_mode=custom model_sha256=3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb parity_mode=true",
+      "rms_difference": 2.8898080378146813e-05,
+      "relative_rms_difference": 0.0003704552929313728,
+      "max_absolute_difference": 0.0014339233748614788,
+      "correlation": 0.9999999315145532,
+      "passed": true
+    }
+  ]
+}

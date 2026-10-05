@@ -1,0 +1,31 @@
+{
+  "stage": "diagnostic only; ARM64 execution/live quality pending",
+  "candidate": "no_oversampling, six-epoch DFN fine-tune",
+  "bundle_sha256": "3db028b05a7bb014da2b04310872413be85b31a144feb463311f4be205e190bb",
+  "processor_sha256": "a0544cd3c9865b7e44862f9849d4e57ce73a1f5edbf8e555ca5370b7c0058025",
+  "elf_machine": "AArch64",
+  "required_shared_libraries": [
+    "libm.so.6",
+    "libpthread.so.0",
+    "libc.so.6",
+    "libdl.so.2"
+  ],
+  "max_required_glibc": "2.30",
+  "x86_waveform_gate_passed": true,
+  "arm64_execution_verified": false,
+  "live_verified": false,
+  "reference_scope": "ten saved validation cases, two rain recordings; not full defence coverage",
+  "post_filter_beta": null,
+  "gain_offset_db": 0,
+  "output_gain_db": 13.638518975440501,
+  "full_model_processing": true,
+  "zip_sha256": "8fc6605cef8a3932d82b74a5e3ad8e7019c72d579f7008bc58a53157607af603",
+  "zip_bytes": 42455839,
+  "verified_members": 30,
+  "runtime_source_sha256": {
+    "runtime/src/bin/stream_raw.rs": "e3f09caf48f49597840a7a6a3bc67de60c4de9f508537d0b09072029ba567268",
+    "runtime/libDF/src/tract.rs": "59a175d059915f94f626b4946219b13e5382371eb75a812f562cf04c3009d7f3",
+    "runtime/Cargo.lock": "f3444aad4c7af15bc361a431bba935435950a96d3abe2e8270c29bb1f223e2a0"
+  },
+  "source_key_note": "Prior-layout source keys rewritten to published-tree-relative paths; SHA-256 values are unchanged build-time records (stream_raw.rs hash matches the pre-publication workspace file, which differs from the cleaned published copy; tract.rs and Cargo.lock match the published files)."
+}

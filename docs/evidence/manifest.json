@@ -1,0 +1,91 @@
+{
+    "prepared_date":  "2026-10-05",
+    "scope":  "judge-facing public evidence copy; WAVs, datasets, weights, and licences excluded; see SANITIZATION.md",
+    "files":  [
+                  {
+                      "file":  "accepted_pi_audio_inspection.json",
+                      "bytes":  436,
+                      "sha256":  "622bae09a0549f575a43e322c15e59d936cd193f7b313bdc9faa40aa8a84228e"
+                  },
+                  {
+                      "file":  "accepted_pi_listener_acceptance.json",
+                      "bytes":  278,
+                      "sha256":  "420f05bf94d328618f3c98e21800b707fdfb3d1c37264115aab7a2fe075ed0a2"
+                  },
+                  {
+                      "file":  "accepted_pi_report.json",
+                      "bytes":  1958,
+                      "sha256":  "0993c301486322b7efed4fc7f82a4589f754f286ef66db9a4d00ab58d365316e"
+                  },
+                  {
+                      "file":  "accepted_pi_telemetry.csv",
+                      "bytes":  2987,
+                      "sha256":  "b25bb3376704747e25504d98278ec3bb7abfc0aa531d7b0d4b4f80ac13d0cc9b"
+                  },
+                  {
+                      "file":  "arm64_package_report.json",
+                      "bytes":  1605,
+                      "sha256":  "78de26513dd0b0033ced7e677f4d7cc047b37b099054277d09396322dd342adb"
+                  },
+                  {
+                      "file":  "onnx_export_report.json",
+                      "bytes":  626,
+                      "sha256":  "7f0b39fd426a13e8257f641df44fdf42a52b75c739457eda85d7bb41c29c6ef7"
+                  },
+                  {
+                      "file":  "paired_validation_review.json",
+                      "bytes":  8949,
+                      "sha256":  "6b7302856acf6fbe19e6ccab41d67f7b96b52c27f577b5a0455fb16b8821ef3c"
+                  },
+                  {
+                      "file":  "README.md",
+                      "bytes":  2636,
+                      "sha256":  "84c6913f0e06e18f7a57da985cc04d740a8eb329f5ac06650798b00fd99e23e2"
+                  },
+                  {
+                      "file":  "rust_arm64_build.log",
+                      "bytes":  5578,
+                      "sha256":  "d0e82aebe5308409615eab89c132ce9b59a8e0b5a292f7b10d50afd08e1fb380"
+                  },
+                  {
+                      "file":  "rust_arm64_elf.txt",
+                      "bytes":  8184,
+                      "sha256":  "41e6c8febed2e6b1e1696e7ec081f14b3798f904d2ca20c4c86e2d38f122181a"
+                  },
+                  {
+                      "file":  "rust_linux_build.log",
+                      "bytes":  4269,
+                      "sha256":  "817bbcaf5ff754a5e696d24652b74f3ab8a4a10d514f4a974b36f38d331f6e23"
+                  },
+                  {
+                      "file":  "rust_linux_tests.log",
+                      "bytes":  6246,
+                      "sha256":  "0ce6b69e10249175035acb7f68db39d6369e05d354ec2797e02de08cc924bd75"
+                  },
+                  {
+                      "file":  "SANITIZATION.md",
+                      "bytes":  4595,
+                      "sha256":  "7b24508d7f0d0f862a0e1bde7bd4d77b73b229b73cc6b6a0a7a6df5a78856d7b"
+                  },
+                  {
+                      "file":  "training_snapshot_verification.json",
+                      "bytes":  2063,
+                      "sha256":  "6df22854212dcff7cad95a2d315a7a732a62742e26fe99c7bba549cb4b6635b1"
+                  },
+                  {
+                      "file":  "validation_review.md",
+                      "bytes":  1773,
+                      "sha256":  "306f8b98f2f75147b86ac7d60c9d309dd2890b6dd3c40c60137b4514dae051e5"
+                  },
+                  {
+                      "file":  "verify_evidence.py",
+                      "bytes":  530,
+                      "sha256":  "6ec97d1af6a01703ceef9be6a034780dd54d9fb36ccbe47327497b56f7625318"
+                  },
+                  {
+                      "file":  "waveform_parity.json",
+                      "bytes":  5364,
+                      "sha256":  "41711879a272309446cb9814fa227fe0547645610e70e6487ebb6324aebd2eeb"
+                  }
+              ]
+}

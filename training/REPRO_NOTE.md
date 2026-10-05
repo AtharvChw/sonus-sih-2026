@@ -1,0 +1,5 @@
+# Reproduction-chain note (training/)
+
+The GPU run chain referenced by `06_train.sh` / `07_export.sh` / `config.env` is now complete inside this folder: `00_kaggle_checklist.md` (runbook), `06b_smoke.py` (CUDA smoke, step C6b), `verify_smoke_gate.py` (pre-train gate), `09_snapshot.sh` (session snapshot), `08_results_manifest.py` (results manifest). Every script reference made by the published `training/` scripts resolves here; no dangling references remain.
+
+Honest gap: the wider private pipeline is NOT published: input-location, environment-setup, data-staging, run-seeding, and session-restore helpers `00_locate_inputs.sh`, `01_setup.sh`, `02_get_data.sh`, `05_init_runs.py`, `10_restore.sh`, plus mock/resume tests. Raw datasets, credentials, checkpoints, ONNX bundles, and binaries are excluded (see `docs/limitations.md` and `THIRD_PARTY_NOTICES.md`). So this folder documents and gates the exact training/export invocations, but a from-scratch rerun additionally needs the private workspace steps and the distributors' datasets.

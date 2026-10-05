@@ -1,0 +1,19 @@
+[package]
+name = "dfn_stream_probe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+# Isolated DeepFilterNet v0.5.6 libDF fork vendored under runtime/libDF.
+# Upstream: https://github.com/Rikorose/DeepFilterNet (MIT/Apache-2.0).
+# See THIRD_PARTY_NOTICES.md. Build the ONNX model bundle separately;
+# this publication ships no weights (see docs/limitations.md).
+deep_filter = { path = "../libDF", features = ["tract", "wav-utils"] }
+ndarray = "0.15"
+serde_json = "1"
+sha2 = "0.10"
+flate2 = "1"
+tar = "0.4"
+rust-ini = "0.19"
