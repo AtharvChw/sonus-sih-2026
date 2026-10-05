@@ -41,6 +41,13 @@ Losses are training losses, not SNR/STOI/PESQ. `no_oversampling` was selected fo
 runtime testing because of its speech-preservation tradeoff (fewer material STOI
 drops), not declared universally superior. See `docs/decisions.md`.
 
+## Active training losses (upstream v0.5.6 defaults — `training/run_dfn_train.py` passes no loss overrides)
+
+The fine-tune optimised the upstream composite loss with: local-SNR weight
+0.001; multi-resolution spectral magnitude + complex weights 500; standalone
+mask, SDR, and ASR weights 0. STOI/PESQ are evaluation metrics, NOT training
+losses.
+
 ## Model identity
 
 Selected bundle SHA-256:

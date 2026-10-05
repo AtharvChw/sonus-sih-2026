@@ -34,6 +34,8 @@ No GPU, cloud connection, Wi-Fi transport, or second microphone is required or u
 
 ## Install
 
+Commands below are audited against this tree (paths, filenames, cargo bin name, pip packages); a fresh-operator install is unverified.
+
 ```bash
 # on the Pi
 mkdir -p ~/anc-validation/pi_candidate_v17 ~/anc-validation/pi_pf03_clarity
@@ -83,7 +85,7 @@ non-PF03 gain preset, so it is not acoustically identical).
 
 Custom v17 `no_oversampling` bundle, standard runtime thresholds, PF beta 0.03
 (`full_model_processing=false`), natural EQ (high-pass 95 Hz; -1 dB at 350 Hz;
-+0.7 dB at 2700 Hz; +3 dB at 4200 Hz Q 0.7; +0.8 dB at 2500 Hz Q 1.1), total gain
++0.7 dB at 2700 Hz; +3 dB at 4200 Hz Q 0.7; +0.8 dB at 2500 Hz Q 1.1; no bass boost), total gain
 9.138518975440501 dB (offset -4.5), soft peak guard (0.72 / 0.95), USB Mic 5
 with AGC off, input 1 / output 0, 48 kHz mono, 10 ms hop, 60 ms jitter buffer,
 80 ms requested device latency. Full values: `configs/preset_pf03.json`.

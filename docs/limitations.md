@@ -15,9 +15,12 @@ are explicitly NOT claimed and remain open.
   PESQ-WB > 2.5 on development validation only. Per-condition achievement is
   unverified; STOI/PESQ gain CIs vs pretrained cross zero; 12/480 STOI drops >
   0.02 and 92/480 PESQ drops > 0.1 vs pretrained remain under review.
-- **No sealed final evaluation.** The frozen development set and the sealed
-  holdout were kept out of training/selection; a fresh unseen evaluation of the
-  locked system — including scoring of the deployment PF03 preset — has not run.
+- **Final unseen evaluation IN PROGRESS.** Locked 420-case first-use subset
+  (3 unseen speakers, 14 noise recordings, 7 categories, 5 SNR levels -5..15 dB,
+  3 s clips); scored 378/420 as of 5 Oct 2026, 21:46 IST; no summary.json, no per-case
+  metrics rollup, no scores published, no means extrapolated. The deployment
+  preset will NOT be tuned on this set. Drone/artillery/armor real-source
+  coverage is not established (7 available categories only).
 - **No acoustic latency or power numbers.** Reported 6.23 ms mean / 9.43 ms max
   is processor roundtrip per 10 ms hop, not microphone-to-headphone latency
   (unmeasured, as is electrical power/thermal-battery behavior).
@@ -53,7 +56,7 @@ are explicitly NOT claimed and remain open.
 
 ## Remaining work, in order
 
-1. Fresh unseen held-out evaluation of the locked system + deployment-preset scoring.
+1. Fresh unseen held-out evaluation of the locked system + deployment-preset scoring (scoring in progress — see evaluation §6; no scores published yet).
 2. Measured microphone-to-headphone latency (declare an acceptance threshold first).
 3. Broader noise/speaker trials, sustained PF03 operation, recovery behavior.
 4. Measured power/thermal behavior and a sourced bill of materials.
